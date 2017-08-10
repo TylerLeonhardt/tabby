@@ -1,0 +1,15 @@
+{
+  "generator-ng-fullstack": {
+    "appName": "vue-hello-world",
+    "username": "tylerl0706",
+    "userEmail": "tylerl0706@gmail.com",
+    "stack": "client",
+    "repoHostUrl": "github.com",
+    "userNameSpace": "tylerl0706",
+    "client": "vue2",
+    "stylePreprocessor": "none",
+    "server": "",
+    "secure": false,
+    "testsSeparated": true
+  }
+}
