@@ -1,0 +1,52 @@
+{
+    "name": "Tabby",
+    "short_name": "ProjectSam",
+    "version": "0.1.0",
+    "author": "Saga",
+    "background": {
+      "page": "client/dist/extension/background.html",
+      "persistent": true
+    },
+    "browser_action": {
+      "default_icon": {
+        "25": "client/dist/extension/images/logo_24x24.png"
+      },
+      "default_title": "Tabby",
+      "default_popup": "client/dist/index.html"
+    },
+    "browser_specific_settings": {
+      "edge": {
+        "browser_action_next_to_addressbar": true
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "client/dist/extension/content.js"
+        ],
+        "run_at": "document_start"
+      }
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com/vuetify/dist/vuetify.min.js; object-src 'self'",
+    "description": "Tabby",
+    "icons": {
+      "16": "client/dist/extension/images/logo_16x16.png",
+      "48": "client/dist/extension/images/logo_48x48.png",
+      "128": "client/dist/extension/images/logo_128x128.png"
+    },
+    "manifest_version": 2,
+    "options_page": "client/dist/extension/options.html",
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "storage",
+      "unlimitedStorage",
+      "https://unpkg.com/vuetify/dist/vuetify.min.js"
+    ],
+    "chrome_url_overrides" : {
+      "newtab": "client/dist/extension/newtab.html"
+    }
+  }

@@ -1,0 +1,1 @@
+"use strict";window.browser=window.browser||window.chrome;function handleMessage(a,b,c){a.openTab&&browser.tabs.create({url:a.openTab})}browser.runtime.onMessage.addListener(handleMessage);

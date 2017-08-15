@@ -1,0 +1,19 @@
+body {
+  min-width: 375px;
+  min-height: 232px;
+}
+
+.divider {
+  background-color: #E0E0E0;
+}
+
+body {
+  background-color: #F2F4F5;
+  /*background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you!
+  background-repeat: repeat;*/
+}
+
+.background-white {
+  background-color: #F2F4F5;
+}

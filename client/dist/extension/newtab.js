@@ -1,0 +1,1 @@
+'use strict';window.browser=window.browser||window.chrome,browser.storage.sync.get('pages',function(a){0<a.pages.length&&(location.href=a.pages[Math.floor(Math.random()*a.pages.length)].pageMessage)});
